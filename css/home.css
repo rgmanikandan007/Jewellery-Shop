@@ -9,6 +9,13 @@ body {
 body button{
     cursor: pointer;
 }
+.line{
+    text-align: center;
+}
+.line img{
+    width: 80%;
+    filter: grayscale();
+}
 /* 832729 */
 /* Navbar Start */
 .navbar {
@@ -122,6 +129,20 @@ body button{
     height: 600px;
     filter: brightness(40%);
 }
+@media screen and (max-width: 768px) {
+    .banner img{
+        width: 100%;
+        height: 400px;
+        filter: brightness(40%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner img{
+        height: 300px;
+        filter: brightness(40%);
+    }
+}
 /* Banner End */
 
 
@@ -137,11 +158,13 @@ body button{
     display: flex;
 }
 .aboutus-right img{
-    margin: 10px;
+    margin: 5px;
+    /* filter: brightness(50%); */
 }
 .aboutus-left{
     width: 70%;
-    padding-top: 4rem;
+    padding-top:6rem;
+    padding-left: 2rem;
 }
 .aboutus-right{
     /* width: 50%; */
@@ -168,7 +191,12 @@ body button{
     letter-spacing: 2px;
     background: none;
 }
-
+.radi-left img{
+    border-radius: 10px 0 0 10px;
+}
+.radi-right img{
+    border-radius: 0 10px 10px 0;
+}
 @media screen and (max-width: 768px){
     .aboutus-container{
         display: block;
@@ -179,14 +207,155 @@ body button{
     }
     .aboutus-right{
         width: 100%;
+        margin-left: 4rem;
     }
 }
 @media screen and (max-width: 425px){
     .aboutus-left{
         text-align: center;
+        padding: 0;
     } 
     .aboutus-right img{
         width: 30px;
     }
+    .aboutus-right{
+        margin-left: 0;
+    }
 }
 /* About Us End */
+
+
+
+/* Modertools Start */
+.moderntools{
+    padding: 2rem;
+}
+.moderntools-container{
+    display: flex;
+}
+.moderntools-left img{
+    width: 500px;
+    border-radius: 5px;
+}
+.moderntools-right{
+    margin-top: 4rem;
+}
+.moderntools-left{
+    /* width: 50%; */
+    padding: 2rem;
+}
+.moderntools-bottom-btn button{
+    border: none;
+    letter-spacing: 2px;
+    background: none;
+    margin-bottom: 2rem;
+}
+.moderntools-right h2{
+    margin-bottom: 2rem;
+}
+.moderntools-right p{
+    margin-bottom: 2rem;
+}
+.moderntools-top-btn button{
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    background-color: black;
+    color: #fff;
+    border: #fff 1px solid;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .moderntools-container{
+        display: block;
+    }
+    .moderntools-right{
+        text-align: center;
+        width: 100%;
+    }
+    .moderntools-left{
+        width: 100%;
+    }
+    .moderntools-left img{
+        margin-left: 4rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .moderntools-right{
+        text-align: center;
+    } 
+    .moderntools-left img{
+        width: 100%;
+    }
+    .moderntools-left img{
+        margin-left: 0;
+    }
+}
+/* Modertools End */
+
+
+
+
+/* Services Start */
+.services{
+    padding: 3rem 0rem;
+    background-color: rgb(247, 247, 247);
+}
+.services-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.services-txt{
+    text-align: center;
+}
+.services-txt img{
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .services-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-txt{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .services-txt img{
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+}
+/* Services End */
+
+
+
+
+/* Deals Start */
+.deals{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.945), rgba(0, 0, 0, 0.616) ), url(/images/banner.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.deals-container{
+    color: #fff;
+    text-align: center;
+    padding-top: 5rem;
+}
+.deals-container button{
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    background: none;
+    color: #fff;
+    padding: 10px;
+}
+.deals-container h2{
+    margin-bottom: 2rem;
+}
+.deals-container p{
+    padding: 0 3rem 0 3rem;
+}
+/* Deals End */
