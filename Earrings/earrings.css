@@ -116,6 +116,12 @@ body button {
 /* Navbar End */
 
 
+.banner-img img{
+    width: 100%;
+    filter: brightness(70%);
+    border-radius: 5px;
+}
+
 .earrings-filter{
     margin-top: 5rem;
     text-align: center;

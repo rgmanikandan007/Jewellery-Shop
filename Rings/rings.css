@@ -115,47 +115,24 @@ body button {
 }
 /* Navbar End */
 
+
 .banner-img img{
     width: 100%;
     filter: brightness(70%);
     border-radius: 5px;
 }
 
-/* Bredcrumbs Start */
-.bredcrumbs{
-    padding-top: 2rem;
-    margin-left: 5rem;
-}
-.bredcrumbs-child{
-    display: flex;
-}
-.bredcrumbs-child i,h5,span{
-    margin-left: 1rem;
-}
-.bredcrumbs-child a{
-    text-decoration: none;
-    color: black;
-}
-.bredcrumbs hr{
-    margin-top: 1rem;
-    width: 95%;
-    color: #646464;
-}
-/* Bredcrumbs End */
 
 
-
-
-
-.necklaces-filter{
+.rings-filter{
     margin-top: 5rem;
     text-align: center;
 }
-.necklaces {
+.rings {
     display: flex;
     padding-top: 5rem;
 }
-.necklaces-filter {
+.rings-filter {
     position: fixed;
     top: 0;
     left: 0;
@@ -165,36 +142,39 @@ body button {
     padding: 20px;
     overflow-y: auto;
 }
-.necklaces-filter h3 {
+.rings-filter ul li{
+    margin-bottom: 1.5rem;
+}
+.rings-filter h3 {
     margin-bottom: 20px;
 }
-.necklaces-filter ul {
+.rings-filter ul {
     list-style-type: none;
 }
-.necklaces-filter li {
+.rings-filter li {
     margin-bottom: 10px;
 }
-.necklaces-products {
+.rings-products {
     margin-left: 270px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.necklaces-child-product {
+.rings-child-product {
     flex: 1 1 calc(25% - 20px);
 }
-.necklaces-child-product img {
+.rings-child-product img {
     width: 100%;
     height: auto;
     display: block;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
-.necklaces-filter ul li {
+.rings-filter ul li {
     font-size: 13px;    
     cursor: pointer;
 }
-.necklaces-child-product {
+.rings-child-product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,13 +194,13 @@ body button {
 }
 
 @media screen and (max-width: 768px) {
-    .necklaces-child-product {
+    .rings-child-product {
         flex: 1 1 calc(50% - 20px);
     }
 }
 
 @media screen and (max-width: 320px) {
-    .necklaces-child-product {
+    .rings-child-product {
         flex: 1 1 100%;
     }
 }
