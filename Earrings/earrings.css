@@ -163,10 +163,10 @@ body button {
     flex: 1 1 calc(25% - 20px);
 }
 .earrings-child-product img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    box-shadow: 0 8px 16px rgba(49, 49, 49, 0.103); 
 }
 .earrings-filter ul li {
     font-size: 13px;    
@@ -177,10 +177,12 @@ body button {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
 }
 
 .add-to-cart-btn {
-    padding: 10px 120px;
+    padding: 10px 80px;
     background: linear-gradient(300deg,#f5f5f5,#f0cf64);
     color: #000000;
     font-weight: 600;
