@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Playpen Sans", cursive;
+    font-family: "Mukta";
 }
 body button{
     cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 .line{
     text-align: center;
@@ -56,7 +59,8 @@ body button{
     border-radius: 10px;
 }
 .dropdown-content a:hover{
-    background-color: #333333;
+    background-color: #f0cf64;
+    color: #111;
 }
 .dropdown-content a {
     padding: 15px;
@@ -110,6 +114,7 @@ body button{
     }
     .nav-icons i{
         font-size: 18px;
+        display: none;
     }
 }
 
@@ -122,6 +127,7 @@ body button{
     }
     .nav-icons i{
         font-size: 15px;
+        display: none;
     }
 }
 /* Navbar End */
@@ -133,6 +139,7 @@ body button{
 } */
 .banner img{
     width: 100%;
+    overflow: hidden;
     height: 600px;
     filter: brightness(40%);
 }
@@ -441,7 +448,7 @@ body button{
 
 /* Reason Start */
 .reason{
-    background-color: #111;
+    background-color: #111111;
     padding: 2rem;
     margin-top: 3rem;
 }
@@ -459,13 +466,15 @@ body button{
 .reason-images h4{
     color: #fff;
 }
-@media only screen and (max-width: 768px) {
+.child-reason h4{
+    font-size: 13px;
+}
+@media screen and (max-width: 768px) {
     .reason-images {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .child-reason {
         flex: 1 1 30%; 
         text-align: center;
@@ -473,12 +482,11 @@ body button{
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .reason-images {
         display: flex;
         flex-direction: column;
     }
-
     .child-reason {
         flex: 1 1 100%; 
         text-align: center;
@@ -491,9 +499,10 @@ body button{
 
 /* Footer Start */
 .footer{
-    background-color: #111;
+    background-color: #ffffff;
+    /* background: linear-gradient(300deg,#f5f5f5,#f0cf64); */
     padding: 2rem;
-    color: #fff;
+    color: #000000;
     margin-top: 1px;
 }
 .footer-container{
@@ -514,11 +523,13 @@ body button{
     padding: 10px;
     border: none;
     border-radius: 7px 0 0 7px;
+    border: 1px solid #adadad;
 }
 .newsletter button{
     padding: 10px;
     border: none;
     border-radius: 0 7px 7px 0;
+    border: 1px solid #adadad;
 }
 .footer-container h3{
     font-size: 15px;

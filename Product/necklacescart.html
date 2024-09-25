@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Necklaces Cart</title>
+    <title>Jwelery Shop</title>
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="necklacescart.css">
-    <!-- GOOGLE FONT LINK PLAYPEN SANS -->
+    <link rel="stylesheet" href="/Product/necklacescart.css">
+    <!-- GOOGLE FONT FAMILY LINK -->
+    <!-- GOOGLE FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- FONT AWESOME ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <!-- Navbar Start -->
     <nav class="navbar">
-        <div class="brand-title">Jewelry<sub style="font-size: 14px; color: #f0cf64;">Shop</sub></div>
+        <div class="brand-title"><a href="/home.html"><span style="color: #fff;">Jewelry</span><sub style="font-size: 14px; color: #f0cf64;">Shop</sub></a></div>
         <a class="toggle-button" id="toggle-btn">
             &#9776;
         </a>
         <div class="navbar-links" id="navbar-links">
             <ul>
-                <li><a href="/home.html">Home</a></li>
+                <!-- <li><a href="/home.html">Home</a></li> -->
                 <li><a href="/Aboutus/aboutus.html">About</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Products</a>
@@ -74,10 +80,10 @@
     <!-- Add Cart Start -->
     <div class="addcart">
         <div class="addcart-container">
-            <div class="addcart-img">
+            <div class="addcart-img" data-aos="fade-left">
                 <img src="/images/Necklaces/neckcart.jpg" alt="img">
             </div>
-            <div class="addcart-content">
+            <div class="addcart-content" data-aos="fade-right">
                 <h2>
                     Pendant Necklaces</h2>
                 <h4>A Chain With a Hanging Ornament or Charm</h4>
@@ -92,7 +98,7 @@
                     <i class="fa-solid fa-angles-right"></i>
                 </div>
                 <div class="addcart-btn">
-                    <a href="/Payment/payment.html"><button>Add To Cart</button></a>
+                    <a href="/Payment/payment.html"><button>Proceed to pay</button></a>
                 </div><hr>
                 <div class="wishlist">
                     <i class="fa-regular fa-heart"></i>
@@ -115,7 +121,7 @@
     <!-- Footer Start -->
     <div class="footer">
         <div class="footer-container">
-            <div class="company">
+            <div class="company" data-aos="fade-left">
                 <h3>Jewellery Shop DIAMONDS & GOLD <br> PVT.LTD.</h3>
                 <p>Jewellery Shop is a Fine Jewellery Store specializing in <br> customized designs and
                     personalized
@@ -129,7 +135,7 @@
                     No A44/2, DLF Phase 1, Usman Kawaja Road,<br>
                     Gurgaon, Haryana - 292929.</p>
             </div>
-            <div class="policies">
+            <div class="policies" data-aos="fade-up-left">
                 <h3>POLICIES</h3>
                 <ul>
                     <li>Privacy Policy</li>
@@ -140,13 +146,13 @@
                     <li>International Shipping Policy</li>
                 </ul>
             </div>
-            <div class="newsletter">
+            <div class="newsletter" data-aos="fade-up-right">
                 <h3>NEWS LETTER</h3>
                 <p>Subscribe to receive updates, access to <br> exclusive deals, and more.</p>
                 <input type="text" placeholder="Text Here..."></input>
                 <button>SUBSCRIBE</button>
             </div>
-            <div class="knowus">
+            <div class="knowus" data-aos="fade-right">
                 <h3>GET TO KNOW US</h3>
                 <ul>
                     <li>Bridal Lounge</li>
@@ -180,5 +186,10 @@
             }
         });
     </script>
+
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>

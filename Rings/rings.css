@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Playpen Sans", cursive;
+    font-family: "Mukta";
 }
-body button {
+body button{
     cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 
 /* Navbar Start */
@@ -49,7 +52,8 @@ body button {
     border-radius: 10px;
 }
 .dropdown-content a:hover{
-    background-color: #333333;
+    background-color: #f0cf64;
+    color: #111;
 }
 .dropdown-content a {
     padding: 15px;
